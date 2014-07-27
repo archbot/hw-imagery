@@ -10,3 +10,4 @@ Future Changes:
 - Slideshow integration for archives
 - Archive management via cloud file managment (ability to change featured archive images without changing actual html/css files)
 - Combine all css files into one main file
+- Add test for mobile browser support
