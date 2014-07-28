@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function() { 
+                $('#slideshow > div:first')
+                .fadeOut(1000)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+            }, 4000);
+        });
+    </script>
+    <!-- detect mobile browsers -->
+  <head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway|Dancing+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="home.css">
+    <title>HW Photography</title> <!-- &middot; -->
+  </head> 
+  <body>
+    <div class="nav">
+      <div class="title">
+        <img src="http://i.imgur.com/1H3YDF7.jpg"/>
+      </div>
+      <div class="container">
+            <ul class="nav nav-justified">
+              <li class="button"><a href="http://archbot.github.io/hw-imagery/"><h1>Home</h1></a></li>
+              <li class="button"><a href="http://archbot.github.io/hw-imagery/archive.html"><h1>Archive</h1></a></li>
+              <li class="button"><a href="http://archbot.github.io/hw-imagery/pricing.html"><h1>Pricing</h1></a></li>
+              <li class="button"><a href="http://archbot.github.io/hw-imagery/contact.html"><h1>Contact</h1></a></li>
+        </ul>
+      </div>
+    </div> <!-- end navbar -->
+    <div class="spacer"> 
+      <div id="slideshow">
+        <div>
+          <a href="http://i.imgur.com/CY6RdVO.jpg"><img src="http://i.imgur.com/CY6RdVO.jpg"/></a>
+        </div>
+        <div>
+          <a href="http://i.imgur.com/7vQhAPU.jpg"><img src="http://i.imgur.com/7vQhAPU.jpg"/></a>
+        </div>
+        <div>
+          <a href="http://i.imgur.com/vOE92TQ.jpg"><img src="http://i.imgur.com/vOE92TQ.jpg"/></a>
+        </div>
+        <div>
+          <a href="http://i.imgur.com/vfTnueh.jpg"><img src="http://i.imgur.com/vfTnueh.jpg"/></a>
+        </div>
+        <div>
+          <a href="http://i.imgur.com/galhpM1.jpg"><img src="http://i.imgur.com/galhpM1.jpg"/></a>
+        </div>
+      </div> <!-- end slideshow -->
+    </div> <!-- end background spacer -->
+  </body>
+</html> 
