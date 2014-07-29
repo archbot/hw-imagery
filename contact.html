@@ -44,17 +44,11 @@
               {
               $name=$_REQUEST['name'];
               $email=$_REQUEST['email'];
-              $message=$_REQUEST['message'];
-              if (($name=="")||($email=="")||($message==""))
-                  {
-                  echo "All fields are required, please fill the form out again";
-                  }
-              else{        
-                  $from="From: $name<$email>\r\nReturn-path: $email";
-                  $subject="Message sent using your contact form";
-                  mail("youremail@yoursite.com", $subject, $message, $from);
-                  echo "Email sent!";
-                  }
+              $message=$_REQUEST['message'];    
+              $from="From: $name";
+              $subject="Message sent using your contact form";
+              mail("hwinsted@gmail.com", $subject, $message, $from);
+              echo "Email sent!";
               }  
           ?>
           <p>Thanks for stopping by!</p>
