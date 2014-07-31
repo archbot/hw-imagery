@@ -63,4 +63,4 @@ h1,h2 {
 	color: #5a99f8;
 }
 
-p {font-family: "Raleway", sans-serif;}
+p,h4,h5 {font-family: "Raleway", sans-serif;}
