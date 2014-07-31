@@ -3,21 +3,15 @@
     $myemail  = "hwinsted@gmail.com";
 
     /* Check all form inputs using check_input function */
-    $name = check_input($_GET['name'], "Enter your name");
-    $email = check_input($_GET['email']);
-    $number = check_input($_GET['number'])
-    $comments = check_input($_GET['comments'], "Write your message");
+    $name = check_input($_POST['name'], "Enter your name");
+    $email = check_input($_POST['email']);
+    $number = check_input($_POST['number'])
+    $comments = check_input($_POST['comments'], "Write your message");
 
     /* If e-mail is not valid show error message */
     if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
     {
         show_error("E-mail address not valid");
-    }
-
-    /* If URL is not valid set $website to empty */
-    if (!preg_match("/^(https?:\/\/+[\w\-]+\.[\w\-]+)/i", $website))
-    {
-        $website = '';
     }
 
     /* Let's prepare the message for the e-mail */
@@ -33,7 +27,7 @@
     End of message";
 
     /* Send the message using mail() function */
-    mail($myemail, $subject, $comments);
+    mail($myemail, "Form Feedback from ".$name, $comments);
 
     /* Redirect visitor to the thank you page */
     header('Location: thankyou.html');
