@@ -7,6 +7,7 @@
       <title>HW Photography &middot; Contact</title> <!-- &middot; -->
     </head> 
     <body>
+      <?php include "contact.php"; ?>
       <div class="back">
         <div class="nav">
           <div class="title">
@@ -23,7 +24,7 @@
         </div> <!-- end navbar -->
         <div class="contact">
           <h2>Contact Us</h2>
-          <h6>Required fields are bold.
+          <p>Required fields are bold.</p>
               <form  action="contact.php" method="post">
                 <input type="hidden" name="action" value="submit" />
                 <b>Your name:</b><br>
@@ -34,6 +35,7 @@
                 <input name="number" type="tel" name="phonenumber" value="" min = "10" max="10" /><br>
                 <b>Your message:</b><br>
                 <textarea name="comments" rows="7" cols="30"></textarea><br>
+                <p></p> 
                 <input type="submit" value="Send email"/>
               </form>
           <p></p>
