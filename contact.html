@@ -1,28 +1,3 @@
-<?php
-  $myemail = "hwinsted@gmail.com";
-  $subject = "Form Submitted via HW-Imagery";
-  $name = $_POST['name'];
-  $email = $_POST['email'];
-  $number = $_POST['number'];
-  $comments = $_POST['comments'];
-  $message  = <<<EMAIL
-
-Name:   $name
-Email:  $email
-Phone:  $number
-
-Message:
-
-$comments
-
-EMAIL;
-$header = '$email';
-
-if($_POST){
-  mail($myemail,$subject,$message,$header);
-  $feedback = "Thanks for contacting us! We'll be in touch soon.";
-}
-?>
 <!DOCTYPE html>
 <html>
   <head>

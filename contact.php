@@ -16,10 +16,9 @@ Message:
 $comments
 
 EMAIL;
-$header = '$email';
 
 if($_POST){
-  mail($myemail,$subject,$message,$header);
+  mail($myemail,$subject,$message);
   $feedback = "Thanks for contacting us! We'll be in touch soon.";
 }
 ?>
@@ -48,17 +47,16 @@ if($_POST){
       </div> <!-- end navbar -->
       <div class="contact">
         <h2>Contact Us</h2>
-        <p>Required fields are bold.</p>
-        <p id="feedback"><?php echo $feedback; ?></p>
+        <h4 id="feedback"><?php echo $feedback; ?></h4>
             <form  action="?" method="POST">
               <input type="hidden" name="action" value="submit" />
-              <label for="name"><b>Your name:</b><br></label
-              <input type="text" name="name" id="name" size="30" /><br>
+              <label for="name">Your name:<br></label>
+              <input type="text" name="name" id="name" /><br></label>
               <label for="email">Your email:<br></label>
-              <input type="text" name="email" id="email" size="30" /><br>
+              <input type="text" name="email" id="email" /><br>
               <label for="number">Your number:<br></label>
               <input type="tel" name="number" id="number" /><br>
-              <label for="comments"><b>Your message:</b></label><br>
+              <label for="comments">Your message:</label><br>
               <textarea name="comments" id="comments" rows="7" cols="30"></textarea><br>
               <input type="submit" value="Send email"/>
             </form>
