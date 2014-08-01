@@ -1,63 +1,70 @@
 <?php
-    /* Set e-mail recipient */
-    $myemail  = "hwinsted@gmail.com";
+  $myemail = "hwinsted@gmail.com";
+  $subject = "Form Submitted via HW-Imagery";
+  $name = $_POST['name'];
+  $email = $_POST['email'];
+  $number = $_POST['number'];
+  $comments = $_POST['comments'];
+  $message  = <<<EMAIL
 
-    /* Check all form inputs using check_input function */
-    $name = check_input($_GET['name'], "Enter your name");
-    $email = check_input($_GET['email']);
-    $number = check_input($_GET['number'])
-    $comments = check_input($_GET['comments'], "Write your message");
+Name:   $name
+Email:  $email
+Phone:  $number
 
-    /* If e-mail is not valid show error message */
-    if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
-    {
-        show_error("E-mail address not valid");
-    }
+Message:
 
-    /* Let's prepare the message for the e-mail */
-    $message = "Your contact form has been submitted by:
+$comments
 
-    Name: $name
-    E-mail: $email
-    Number: $number
+EMAIL;
+$header = '$email';
 
-    Comments:
-    $comments
-
-    End of message";
-
-    /* Send the message using mail() function */
-    mail($myemail, "Form Feedback from ".$name, $comments);
-
-    /* Redirect visitor to the thank you page */
-    header('Location: thankyou.html');
-    exit();
-
-    /* Functions we used */
-    function check_input($data, $problem='')
-    {
-        $data = trim($data);
-        $data = stripslashes($data);
-        $data = htmlspecialchars($data);
-        if ($problem && strlen($data) == 0)
-        {
-            show_error($problem);
-        }
-        return $data;
-    }
-
-    function show_error($myError)
-    {
-    ?>
-        <html>
-        <body>
-
-        <b>Please correct the following error:</b><br />
-        <?php echo $myError; ?>
-
-        </body>
-        </html>
-    <?php
-    exit();
-    }
+if($_POST){
+  mail($myemail,$subject,$message,$header);
+  $feedback = "Thanks for contacting us! We'll be in touch soon.";
+}
 ?>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway|Dancing+Script' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="contact.css">
+    <title>HW Photography &middot; Contact</title> <!-- &middot; -->
+  </head> 
+  <body>
+    <div class="back">
+      <div class="nav">
+        <div class="title">
+          <img src="http://i.imgur.com/1H3YDF7.jpg"/>
+        </div>
+        <div class="container">
+          <ul class="nav nav-justified">
+            <li class="button"><a href="http://archbot.github.io/hw-imagery/"><h1>Home</h1></a></li>
+            <li class="button"><a href="http://archbot.github.io/hw-imagery/archive.html"><h1>Archive</h1></a></li>
+            <li class="button"><a href="http://archbot.github.io/hw-imagery/pricing.html"><h1>Pricing</h1></a></li>
+            <li class="button"><a href="http://archbot.github.io/hw-imagery/contact.html"><h1>Contact</h1></a></li>
+          </ul>
+        </div>
+      </div> <!-- end navbar -->
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Required fields are bold.</p>
+        <p id="feedback"><?php echo $feedback; ?></p>
+            <form  action="?" method="POST">
+              <input type="hidden" name="action" value="submit" />
+              <label for="name"><b>Your name:</b><br></label
+              <input type="text" name="name" id="name" size="30" /><br>
+              <label for="email">Your email:<br></label>
+              <input type="text" name="email" id="email" size="30" /><br>
+              <label for="number">Your number:<br></label>
+              <input type="tel" name="number" id="number" /><br>
+              <label for="comments"><b>Your message:</b></label><br>
+              <textarea name="comments" id="comments" rows="7" cols="30"></textarea><br>
+              <input type="submit" value="Send email"/>
+            </form>
+        <p></p>
+        <h5>Thanks for stopping by!</h5>
+      </div>
+    </div>
+  </body>
+</html>
