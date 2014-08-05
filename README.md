@@ -11,11 +11,13 @@ Immediate Changes:
 Future Changes:
 - Create Facebook Page
 - Add info to business search sites (yelp, google, etc)
-- Slideshow integration for archives
+- *Slideshow integration for archives
 - Combine all css files into one main file
 - Archive management via cloud file managment (ability to change featured archive images without changing actual html/css files)
 	- spreadsheet: title, description, image location // need to learn jscript first
 - Add test for mobile browser support
+
+*Archive Page will be 3colx6row. Click archive brings you to new page with gallery of images. Click image opens slideshow plugin with option to close or cycle through images.
 
 Completed:
 - Basic slideshow for landing page
