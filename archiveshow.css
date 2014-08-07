@@ -1,0 +1,73 @@
+/* .class ..... #id */
+body {
+	/* background-color: gray; */
+	background-image: url('Images/meta_background.png');
+	background-repeat: repeat;
+}
+
+h1,h2 {
+	font-family: "Dancing Script", cursive;
+	color: #5a99f8;
+}
+
+p {font-family: "Raleway", sans-serif;}
+
+ul {margin-bottom: -12px;}
+
+.back {
+	display: block;
+	position: relative;
+	width: 60%;	
+	margin: 0 auto; 
+	margin-top: 10px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	padding-bottom: 50px;
+}
+
+.container {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.button h1{
+	position: relative;
+	margin: 0 auto;
+	margin-top: -10px;
+	width:80%;
+	color: #fd69a7;
+}
+
+.nav-justified {margin-bottom: -8px;}
+
+.title {
+	display: block;
+	position: relative;
+	width: 100;
+	margin: 0 auto;
+	margin-top: -10px;
+}
+
+.title img {
+	display: block;
+	position: relative;
+	width: 100%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+#slider {
+	margin: 0px auto;
+	width: 100%;
+	overflow: hidden;
+	margin-top: -3px;
+}
+
+.wide {width: 100%; padding-bottom: 5px;}
+
+.tall {margin: 0px auto; width: 49.75%; padding-bottom: 5px; display: inline-block;}
+
+.tallsingle {margin: 0px auto; width: 75%; padding-bottom: 5px; display: block;}

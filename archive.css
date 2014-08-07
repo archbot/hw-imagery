@@ -65,6 +65,8 @@ h1,h2 {
 
 p {font-family: "Raleway", sans-serif;}
 
+.fancy {font-family: "Dancing Script", cursive;	color: black;}
+
 .archive {
 	display: block;
 	position: relative;	
@@ -106,7 +108,9 @@ p {font-family: "Raleway", sans-serif;}
 	border-radius: 5px;
 }
 
-.archive p:hover, .archive > div:hover {
+.archive a:hover {color: #ffffff;}
+
+.archive p:hover, .archive > div:hover, #center > div:hover{
 	background-color: #5a99f8;
 	border-radius: 5px;
 }
@@ -121,13 +125,16 @@ p {font-family: "Raleway", sans-serif;}
 
 .right {float: right;}
 
-.center {margin-left: auto; margin-right: auto;text-align: center;}
+.center {margin: 0 auto; text-align: center;}
 
-.fancy {
-	font-family: "Dancing Script", cursive;
-	color: black;
+#center {width: 66.666666%; margin: 0 auto;}
+
+#center div {
+	display: inline-block;
+	position: relative;
+	width: 49%;
 }
 
-.archive .fancy {
-	font-size: 1.5em;
-}
+#center:hover {background-color: #ffffff;}
+
+.archive .fancy {font-size: 1.5em;}
