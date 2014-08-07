@@ -22,7 +22,8 @@ ul {margin-bottom: -12px;}
 	margin-top: 10px;
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-	padding-bottom: 50px;
+	padding-bottom: 15px;
+	background-color: white;
 }
 
 .container {
@@ -59,12 +60,34 @@ ul {margin-bottom: -12px;}
 	border-top-right-radius: 25px;
 }
 
-#slider {
-	margin: 0px auto;
+#slidewrap {
 	width: 100%;
-	overflow: hidden;
-	margin-top: -3px;
 }
+
+#slider {
+	margin: -4px auto;
+	width: 797px;
+	height: 531px;
+	overflow: hidden;
+}
+
+#slider img {
+	width: 797px; 
+	height: 531px;
+	float: left;
+	display: none;
+}
+
+a {
+	padding-top: 5px 10px;
+	text-decoration: none;
+}
+
+a.left{float:left;padding-left: 10px;}
+
+a.right{float:right;padding-right: 10px;}
+
+.centertext{text-align: center;}
 
 .wide {width: 100%; padding-bottom: 5px;}
 
