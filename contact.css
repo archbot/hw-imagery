@@ -5,6 +5,17 @@ body {
 	background-repeat: repeat;
 }
 
+h1,h2 {
+	font-family: "Dancing Script", cursive;
+	color: #5a99f8;
+}
+
+p,h4 {font-family: "Raleway", sans-serif;}
+
+label {font-family: "Shadows Into Light Two";}
+
+h5 {font-family: "Dancing Script", cursive;font-size: 1.5em;}
+
 .container {
 	display: block;
 	position: relative;
@@ -58,9 +69,10 @@ body {
 	margin-top: -10px;
 }
 
-h1,h2 {
-	font-family: "Dancing Script", cursive;
-	color: #5a99f8;
+label {
+	margin: auto;
 }
 
-p,h4,h5,label {font-family: "Raleway", sans-serif;}
+input,textarea {
+	width: 100%;
+}
