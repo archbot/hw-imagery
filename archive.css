@@ -1,10 +1,10 @@
 /* .class ..... #id */
-body {
-	/* background-color: gray; */
+/*body {
+	background-color: gray; 
 	background-image: url('Images/meta_background.png');
 	background-repeat: repeat;
 }
-
+*/
 .container {
 	display: block;
 	position: relative;

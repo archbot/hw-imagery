@@ -1,10 +1,4 @@
 /* .class ..... #id */
-body {
-	/* background-color: gray; */
-	background-image: url('Images/meta_background.png');
-	background-repeat: repeat;
-}
-
 .container {
 	display: block;
 	position: relative;
@@ -64,7 +58,7 @@ body {
 	margin: 0 auto;
 }
 
-.left, .right, .center {
+.left, .right {
 	display: inline-block;
 	position: relative;
 	width: 50%;
@@ -72,13 +66,16 @@ body {
 
 .left {
 	float:left;
+	margin-left: -15px;
 }
 
 .right {
 	float: right;
 }
 
-.center {
+#center {
+	width: 50%;
+	margin: 0 auto;
 	padding-bottom: 100px;
 }
 
