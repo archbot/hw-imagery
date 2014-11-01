@@ -3,7 +3,7 @@ hw-imagery
 
 Photography Site for Hannah Winsted
 
-This is the first site I ever created. It was the first iteration of HannahWPhotography.com which has evolved greatly since this was made.
+This is the first site I ever created. It was the first iteration of <a href="HannahWPhotography.com">HannahWPhotography.com</a> which has evolved greatly since this was made.
 
 Goal is to create a site for customers to view portfolio, pricing, and contact info.
 
