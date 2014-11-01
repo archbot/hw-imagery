@@ -3,27 +3,9 @@ hw-imagery
 
 Photography Site for Hannah Winsted
 
+This is the first site I ever created. It was the first iteration of HannahWPhotography.com which has evolved greatly since this was made.
+
 Goal is to create a site for customers to view portfolio, pricing, and contact info.
-
-Immediate Changes:
-- Compress Images?
-- Eliminate render-block?
-
-Future Changes:
-- Add Mobile Compatibility
-- Combine all css files into one main file (get rid of bootstrap or incorporate)
-- Archive management via cloud file management (ability to change featured archive images without changing actual html/css files)
-	- spreadsheet: title, description, image location // need to learn jscript first
-- Add info to business search sites (yelp, google, etc)
-
-Completed:
-- Basic slideshow for landing page
-- Archive page structure set up
-- Archives with blog-style view
-- Contact Request form
-- Optimize Images
-- Acquire & merge to web host
-- Create Facebook Page
 
 Version 0.7
 All pages are live, including archive galleries and contact page. Need to finalize pricing, add social media links to contact page, optimize for mobile, and condense & clean code.
