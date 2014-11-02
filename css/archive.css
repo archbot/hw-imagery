@@ -1,0 +1,140 @@
+/* .class ..... #id */
+/*body {
+	background-color: gray; 
+	background-image: url('Images/meta_background.png');
+	background-repeat: repeat;
+}
+*/
+.container {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.button h1{
+	position: relative;
+	margin: 0 auto;
+	margin-top: -15px;
+	width:80%;
+	color: #fd69a7;
+}
+
+.title {
+	display: block;
+	position: relative;
+	width: 100;
+	margin: 0 auto;
+	margin-top: -10px;
+}
+
+.title img {
+	display: block;
+	position: relative;
+	width: 100%;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+}
+
+.back {
+	display: block;
+	position: relative;
+	width: 60%;	
+	background-color: white;
+	margin: 0 auto; 
+	margin-top: 10px;
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	padding-bottom: 50px;
+}
+
+.contact {
+	display: block;
+	position: relative;	
+	width: 40%;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: -10px;
+}
+
+h1,h2 {
+	font-family: "Dancing Script", cursive;
+	color: #5a99f8;
+}
+
+p {font-family: "Raleway", sans-serif;}
+
+.fancy {font-family: "Dancing Script", cursive;	color: black;}
+
+.archive {
+	display: block;
+	position: relative;	
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 50px;	
+	overflow: hidden;
+}
+
+.tag {
+	font-size: 30px;
+	border: 1px solid #5a99f8;
+	border-radius: 5px;	
+	text-align: center;
+	width: 20%;
+	margin: 0 auto;
+}
+
+.blank {
+	display: block;
+	position: relative;
+	margin-bottom: 10px;
+
+}
+
+.archive img {
+	margin: 5px;
+	border-radius: 5px;
+	width: 95%;	
+	overflow: hidden;
+}
+
+.archive p {
+	text-align: center;
+	width: 75%;
+	margin: 0 auto;
+	font-size: .8em;
+	border-radius: 5px;
+}
+
+.archive a:hover {color: #ffffff;}
+
+.archive p:hover, .archive > div:hover, #center > div:hover{
+	background-color: #5a99f8;
+	border-radius: 5px;
+}
+
+.left, .right, .center{
+	display: inline-block;
+	position: relative;
+	width: 33.33333333%;
+}
+
+.left {float: left;}
+
+.right {float: right;}
+
+.center {margin: 0 auto; text-align: center;}
+
+#center {width: 66.666666%; margin: 0 auto;}
+
+#center div {
+	display: inline-block;
+	position: relative;
+	width: 49%;
+}
+
+#center:hover {background-color: #ffffff;}
+
+.archive .fancy {font-size: 1.5em;}
