@@ -5,25 +5,12 @@ Photography Site for Hannah Winsted
 
 Goal is to create a site for customers to view portfolio, pricing, and contact info.
 
-Immediate Changes:
-- Compress Images?
-- Eliminate render-block?
+Version 2.0
+Complete overhaul of site layout and design. Customized based on the <a href="http://tympanus.net/codrops/2014/07/14/freebie-halcyon-days-one-page-website-template/">"Halcon Days"</a> free template (<a href="http://tympanus.net/Freebies/HalcyonDaysTemplate/">Demo Site</a>)
 
-Future Changes:
-- Add Mobile Compatibility
-- Combine all css files into one main file (get rid of bootstrap or incorporate)
-- Archive management via cloud file management (ability to change featured archive images without changing actual html/css files)
-	- spreadsheet: title, description, image location // need to learn jscript first
-- Add info to business search sites (yelp, google, etc)
-
-Completed:
-- Basic slideshow for landing page
-- Archive page structure set up
-- Archives with blog-style view
-- Contact Request form
-- Optimize Images
-- Acquire & merge to web host
-- Create Facebook Page
+<img src="https://raw.githubusercontent.com/trvswlbrck/Hannah-W-Photography/master/Images/v1screenshot.png" />
+Version 1.0
+First completed iteration of the site. Consists of home, archive (photo gallery), pricing, and contact pages. 
 
 Version 0.7
 All pages are live, including archive galleries and contact page. Need to finalize pricing, add social media links to contact page, optimize for mobile, and condense & clean code.
