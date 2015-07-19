@@ -1,87 +1,14 @@
-/*! http://responsiveslides.com v1.54 by @viljamis */
-
-.rslides {
-  display: block;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  }
-
-.rslides li {
-  -webkit-backface-visibility: hidden;
-  width: 100%;
-  }
-
-.rslides li:first-child {
-  display: block;
-  float: left;
-  position: relative;
-  }
-
-.rslides img {
-  border: 0;
-  display: block;
-  float: none;
-  height: auto;
-  margin: 0 auto;
-  width: 80%;
-  }
-
-.rslides_tabs {
-  list-style: none;
-  padding: 0;
-  font-size: 18px;
-  list-style: none;
-  margin: 0 auto 50px;
-  max-width: 100%
-  text-align: center;
-  width: 100%;
-  }
-
-.rslides_tabs li {
-  display: inline;
-  float: none;
-  margin-right: 1px;
-  }
-
-.rslides_tabs a {
-  width: auto;
-  line-height: 20px;
-  padding: 9px 20px;
-  height: auto;
-  background: transparent;
-  display: inline;
-  }
-
-.rslides_tabs li:first-child {
-  margin-left: 0;
-  }
-
-.rslides_tabs .rslides_here a {
-  background: rgba(255,255,255,.1);
-  color: #fff;
-  font-weight: bold;
-  }
-
-#slider1-pager a {
-  display: inline-block;
-  max-width: 15%;
-}
-
-#slider1-pager img {
-  float: left;
-  max-width: 100%
-}
-
-#slider1-pager .rslides_here a {
-  background: transparent;
-  box-shadow: 0 0 0 2px #666;
-  max-width: 15%;
-}
-
-#slider1-pager a {
-  padding: 0;
-}
+.rslides{display:block;list-style:none;margin:0 auto;padding:0;position:relative;overflow:hidden;width:100%;}
+.rslides li{-webkit-backface-visibility:hidden;width:100%;}
+.rslides li:first-child{display:block;float:left;position:relative;}
+.rslides img{border:0;display:block;float:none;height:auto;margin:0 auto;width:80%;}
+.rslides_tabs{list-style:none;padding:0;font-size:18px;list-style:none;margin:0 auto 50px;max-width:100%
+text-align:center;width:100%;}
+.rslides_tabs li{display:inline;float:none;margin-right:1px;}
+.rslides_tabs a{width:auto;line-height:20px;padding:9px 20px;height:auto;background:transparent;display:inline;}
+.rslides_tabs li:first-child{margin-left:0;}
+.rslides_tabs .rslides_here a{background:rgba(255,255,255,.1);color:#fff;font-weight:bold;}
+#slider1-pager a{display:inline-block;max-width:15%;}
+#slider1-pager img{float:left;max-width:100%}
+#slider1-pager .rslides_here a{background:transparent;box-shadow:0 0 0 2px #666;max-width:15%;}
+#slider1-pager a{padding:0;}

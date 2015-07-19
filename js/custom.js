@@ -31,7 +31,7 @@
 			'img/4Kiddos/thumb/MalooleyFam (48).jpg','img/4Kiddos/thumb/11121.jpg','img/4Kiddos/thumb/Becca (56).jpg',
 			'img/1Family/thumb/13.jpg','img/1Family/thumb/25.jpg','img/1Family/thumb/40.jpg',
 			'img/1Family/thumb/73.jpg','img/1Family/thumb/Becca (9).jpg','img/1Family/thumb/DSC_0747.jpg',
-			'img/1Family/thumb/kkk.jpg','img/1Family/thumb/MFP (4).jpg','img/5Nature/thumb/DSC_0754.jpg',
+			'img/1Family/thumb/kkk.jpg','img/1Family/thumb/MFP4.jpg','img/5Nature/thumb/DSC_0754.jpg',
 			'img/6MyLife/thumb/4568475413.jpg','img/6MyLife/thumb/6MyLife.jpg','img/6MyLife/thumb/Background.jpg',
 			'img/6MyLife/thumb/DSC_0866.jpg','img/6MyLife/thumb/TDOG.jpg','img/6MyLife/thumb/TravisHannah1.jpg',
 			'img/6MyLife/thumb/zDSC_0015.jpg']).preload();
@@ -61,3 +61,22 @@
 	  $(".rslides").responsiveSlides();
 	});
 	// End image slider
+
+/*
+ *	Smoothscroll
+ */
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+	// End smoothscroll
