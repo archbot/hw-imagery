@@ -1,7 +1,7 @@
 hw-imagery
 ==========
 
-Photography Site for Hannah Winsted
+Photography Site for Hannah Winsted 
 
 Goal is to create a site for customers to view portfolio, pricing, and contact info.
 
