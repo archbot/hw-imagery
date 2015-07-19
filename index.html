@@ -1,65 +1,113 @@
 <!DOCTYPE html>
 <html>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $("#slideshow > div:gt(0)").hide();
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://www.traviswaelbroeck.com"/>
+	<meta property="og:image" content="http://www.traviswaelbroeck.com/images/preview.png" />
+	<meta property="og:title" content="Travis Waelbroeck"/>
+	<meta property="og:site_name" content="Travis Waelbroeck"/>
+	<title>Hannah W Photography</title>
+	<!--Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Nixie+One|Permanent+Marker|Petit+Formal+Script|La+Belle+Aurore|Shadows+Into+Light|Cinzel+Decorative:400,700,900|Carter+One|Uncial+Antiqua|League+Script|Indie+Flower|Luckiest+Guy|Berkshire+Swash|Bangers|Metamorphous|Open+Sans:400,300,700,600,800|Raleway' rel='stylesheet' type='text/css'>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/queries.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="images/x-icon.ico" >
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<a href="#main">
+		<div id="lead" class="valign-parent">
+			<h1 class="valign-child">Hannah Winsted</h1>
+		</div>
+	</a>
+<!-- Main Content -->	
+	<section id="main">
+		<div class="twenty valign-parent">
+			<ul class="navi valign-child">
+				<li class="logo"><a href="index.html">Hannah W Photography</a></li>
+				<li><a href="#">Portofolio</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<div class="eighty valign-parent">
+			<div class="valign-child">
+				<div class="surround">
+					<div class="preview">
+						<a href="lovebirds.html">
+							<img src="img/couple.jpg" alt="Lovebirds">
+							<h3 class="preview-title"><span>Lovebirds</span></h3>
+						</a>
+					</div>
+					<div class="preview">
+						<a href="kiddos.html">
+							<img src="img/kids.jpg" alt="Kiddos">
+							<h3 class="preview-title"><span>Kiddos</span></h3>
+						</a>
+					</div>
+					<div class="preview">
+						<a href="families.html">
+							<img src="img/mother-son.jpg" alt="Families">
+							<h3 class="preview-title"><span>Families</span></h3>
+						</a>
+					</div>
+				</div>
+				<div class="surround">
+					<div class="preview">
+						<a href="myfambam.html">
+							<img src="img/dogs.jpg" alt="My Fambam">
+							<h3 class="preview-title"><span>My Fambam</span></h3>
+						</a>
+					</div>
+					<div class="preview">
+						<a href="nature.html">
+							<img src="img/tay.jpg" alt="Nature">
+							<h3 class="preview-title"><span>Nature</span></h3>
+						</a>
+					</div>
+					<div class="preview">
+						<a href="blog.html">
+							<img src="img/couple2.jpg" alt="Blog">
+							<h3 class="preview-title"><span>Blog</span></h3>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End Main Content -->
+	<!-- Overlay content 
+	<div class="overlay valign-parent">
+		<div id="close-me" onclick="close()"></div>
+		<h1 class="valign-child">Here is our overlay.</h1>
+	</div>-->
 
-            setInterval(function() { 
-                $('#slideshow > div:first')
-                .fadeOut(1000)
-                .next()
-                .fadeIn(1000)
-                .end()
-                .appendTo('#slideshow');
-            }, 4000);
-        });
-    </script>
-    <!-- detect mobile browsers -->
-  <head>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href='http://fonts.googleapis.com/css?family=Raleway|Dancing+Script' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/home.css">
-    <title>HW Photography</title> <!-- &middot; -->
-  </head> 
-  <body style="background-image: url(Images/meta_background.png)">
-    <div class="nav">
-      <div class="title">
-        <img src="Images/meta_HWPHOTOG.jpg"/>
-      </div>
-      <div class="container">
-        <ul class="nav nav-justified">
-          <li class="button"><a href="http://hannahwphotography.com/"><h1>Home</h1></a></li>
-          <li class="button"><a href="archive.html"><h1>Archive</h1></a></li>
-          <li class="button"><a href="pricing.html"><h1>Pricing</h1></a></li>
-          <li class="button"><a href="contact.php"><h1>Contact</h1></a></li>
-        </ul>
-      </div>
-    </div> <!-- end navbar -->
-    <div class="spacer"> 
-      <div id="slideshow">
-        <div>
-          <a href="Images/1Slideshow/1.jpg"><img src="Images/1Slideshow/1.jpg"/></a>
-        </div>
-        <div>
-          <a href="Images/1Slideshow/2.jpg"><img src="Images/1Slideshow/2.jpg"/></a>
-        </div>
-        <div>
-          <a href="Images/1Slideshow/3.jpg"><img src="Images/1Slideshow/3.jpg"/></a>
-        </div>
-        <div>
-          <a href="Images/1Slideshow/4.jpg"><img src="Images/1Slideshow/4.jpg"/></a>
-        </div>
-        <div>
-          <a href="Images/1Slideshow/5.jpg"><img src="Images/1Slideshow/5.jpg"/></a>
-        </div>
-        <div>
-          <a href="Images/1Slideshow/6.jpg"><img src="Images/1Slideshow/6.jpg"/></a>
-        </div>
-        <div>
-          <a href="Images/1Slideshow/7.jpg"><img src="Images/1Slideshow/7.jpg"/></a>
-        </div>
-      </div> <!-- end slideshow -->
-    </div> <!-- end background spacer -->
-  </body>
-</html> 
+	<footer>
+		
+	</footer>
+		
+	<!-- Scripts -->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script></div>
+	<script src="js/smoothscroll.js"></script>
+	<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+	<script>
+	  $(function() {
+	    $(".rslides").responsiveSlides();
+	  });
+	</script>
+	</body>
+</html>

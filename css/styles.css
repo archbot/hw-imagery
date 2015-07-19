@@ -1,0 +1,373 @@
+/*
+ *	General
+ */
+	html, body {
+		background-color: #f5f5f5;
+		height: 100%;
+		font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		margin: 0;
+		padding: 0;
+		width: 100%
+	}
+	h1, h2, h3 {
+		font-weight: normal;
+	}
+	li {
+		list-style-type: none;
+	}
+	label {
+		display: block;
+	}
+	.no-style {
+		color: inherit;
+		text-decoration: none;
+	}
+	.valign-parent {
+		display: table;
+	}
+	.valign-child {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-lg-12 {
+	  position: relative;
+	  min-height: 1px;
+	  padding-left: 15px;
+	  padding-right: 15px;
+	}
+	.col-md-4 {width:30%;}
+	.col-md-12{width:100%;}
+	/* End general */
+
+/*
+ *	Onload overlay
+ */
+	.onload-overlay {
+		background-color: #f5f5f5;
+		height: 100%;
+		margin: 0 auto;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		z-index: 999;
+	}
+	.onload-overlay-title {
+		color: #555;
+		font-family: "Petit Formal Script", cursive;
+		font-size: 96px;
+	}
+	/* End overlay */
+
+/*
+ *	Navigation
+ */
+	.navi li {
+		margin: 0.25em 0;
+	}
+	.navi li a {
+		color: #111; 
+		font-family: "Petit Formal Script", cursive;
+		font-size: 1.5em;
+		text-decoration: none;
+	}
+	.logo {
+		font-family: "Petit Formal Script", cursive;
+		font-size: 36px;
+		margin-bottom: 1em;
+	}
+	.twenty {
+		background-color: #f5f5f5;
+		float: left;
+		height: 100%;
+		text-align: center;
+		width: 25%;
+	}
+	.twenty ul {
+		list-style: none;
+		padding: 0;
+	}
+	/* End navigation */
+
+/*
+ *	Main content
+ */
+	.eighty {
+		background-color: #f5f5f5;
+		float: right;
+		height: 100%;
+		text-align: center;
+		width: 75%;
+	}
+	.main {
+		background-color: #f5f5f5;
+		display: none;
+		height: 100%;
+	}
+	/* End main content */
+
+/*
+ *	Portfolio categories
+ */
+	.preview, .preview img, .preview-title {
+		border-radius: 121px;
+		height: 242px;
+		width: 242px;
+	}
+	.preview {
+		display: inline-block;
+		margin: 15px 1%;
+	}
+	.preview a, .preview div {
+		display: block;
+		position: relative;
+	}
+	.preview img {
+		height: auto;
+	}
+	.preview-title {
+		background: rgb(255,255,255);
+		background: rgba(255,255,255,0.5);
+		visibility: hidden;
+		left: 0;
+		margin: 0;
+		position: absolute;
+		opacity: 0;
+		text-align: center;
+		top: 0;
+		transition: visibility 0s 1s, opacity 1s linear;
+		width: 100%
+	}
+	.preview:hover .preview-title {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.5s linear;
+	}
+	.preview-title span {
+		color: #333;
+		font-family: 'Petit Formal Script', cursive;
+		font-size: 1.5em;
+		left: 0;
+		position: absolute;
+		top: 45%;
+		width: 100%;
+	}
+	/* End portfolio categories */
+
+/*
+ *	About
+ */
+	.about {
+		margin: 0 auto;
+		width: 75%;
+	}
+
+	.about p {
+		margin: 0 auto;
+		max-width: 450px;
+		text-align: justify;
+	}
+
+	.hannah-img {
+		max-width: 350px;
+	}
+	/* End about */
+
+/*
+ *	Blog
+ */
+	.blog-title {
+		display: block;
+		margin: 0 auto;
+	}
+	/* End blog */
+
+/*
+ *	Contact
+ */
+	.subscribe {
+	  overflow: auto;
+	}
+	.light-box {
+		background-color: #fff;
+		-webkit-box-shadow: 0 3px 0 0 #f0f2f4;
+    -moz-box-shadow: 0 3px 0 0 #f0f2f4;
+    -o-box-shadow: 0 3px 0 0 #f0f2f4;
+    box-shadow: 0 3px 0 0 #f0f2f4;
+    padding: 20px 0;
+	}
+	.contact-title span {
+    display: block;
+    color: #CC99FF;
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .arrow2 {
+  	background: url('../img/h1-bg-light.png') no-repeat center bottom;
+  	color: #353535;
+  	font-family: "Petit Formal Script", cursive;
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+	}
+	.card {
+		display: inline-block;
+	}
+	/* Form */
+		.form-style{
+			background: #FFFFFF;
+			border-radius: 5px;
+		    -webkit-border-radius:5px;
+		    -moz-border-radius:5px;
+			box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		    -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+		  clear: both;
+		  display: none;
+			margin: 50px auto;
+		  max-width: 450px;
+			padding: 40px 30px 40px 40px;
+		}
+		.form-style-heading{
+	    border-bottom: 2px solid #ddd;
+	    font-family: 'Petit Formal Script', cursive;
+	    font-size: 2em;
+	    margin-bottom: 10px;
+	    font-size: 1.5em;
+	    padding-bottom: 3px;
+		}
+		.form-style label{
+	    display: block;
+	    margin: 0 0 15px 0;
+		}
+		.form-style label > span{
+	    float: left;
+	    text-align: left;
+	    width: 100%;
+		}
+		.form-style span.required{
+	    color:red;
+		}
+		.form-style .tel-number-field{
+	    text-align: center;
+	    width: 40px;
+		}
+		.form-style  .long{
+	    width: 120px;
+		}
+		.form-style input.input-field{
+	    width: 100%;
+		}
+		.form-style input.input-field,
+		.form-style .tel-number-field,
+		.form-style .textarea-field,
+		.form-style .select-field{
+	    -webkit-transition: all 0.30s ease-in-out;
+	    -moz-transition: all 0.30s ease-in-out;
+	    -ms-transition: all 0.30s ease-in-out;
+	    -o-transition: all 0.30s ease-in-out; 
+	    box-sizing: border-box;
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    border: 1px solid #C2C2C2;
+	    box-shadow: 1px 1px 4px #EBEBEB;
+	    -moz-box-shadow: 1px 1px 4px #EBEBEB;
+	    -webkit-box-shadow: 1px 1px 4px #EBEBEB;
+	    border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    padding: 7px;
+	    outline: none;
+	    width: 100%;
+		}
+		.form-style .input-field:focus,
+		.form-style .tel-number-field:focus,
+		.form-style .textarea-field:focus,  
+		.form-style .select-field:focus{
+	    border: 1px solid #0C0;
+		}
+		.form-style .textarea-field{
+	    height:100px;
+	    width: 100%;
+		}
+		.form-style .success{
+			background: #D8FFC0;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 5px 0;
+			border: none;
+			font-weight: bold;
+			color: #2E6800;
+			border-left: 3px solid #2E6800;
+		}
+		.form-style .error {
+			background: #FFE8E8;
+			padding: 5px 10px 5px 10px;
+			margin: 0 0 5px 0;
+			border: none;
+			font-weight: bold;
+			color: #FF0000;
+			border-left: 3px solid #FF0000;
+		}
+
+		.submit_btn {
+			text-transform: uppercase;
+		  letter-spacing: 2px;
+		  text-align: center;
+
+		  font-size: 24px;
+		  font-family: "Open Sans", sans-serif;
+		  font-weight: 300;
+		  
+		  padding: 10px 0;
+		  width: 220px;
+
+		  background: #CC99FF;
+		  border: 1px solid #CC99FF;
+		  color: #FFF;
+		  overflow: hidden;
+		  
+		  transition: all 0.5s;
+		}
+		.submit_btn:hover, .submit_btn:active 
+		{
+		  text-decoration: none;
+		  color: #CC99FF;
+		  border-color: #CC99FF;
+		  background: #FFF;
+		}
+		/* End form */
+	/* End contact */
+
+/* 
+ *	Transiitons
+ */
+	.transition-2 {
+	  -webkit-transition: ease-in-out all 2s;
+    -moz-transition: ease-in-out all 2s;
+    -o-transition: ease-in-out all 2s;
+    transition: ease-in-out all 2s;
+	}
+	.transition-5 {
+	  -webkit-transition: ease-in-out all 1s;
+    -moz-transition: ease-in-out all 1s;
+    -o-transition: ease-in-out all 1s;
+    transition: ease-in-out all 1s;
+	}
+	.box-hover {
+	  transition: all 500ms ease-in-out;
+	  -webkit-transition: all 500ms ease-in-out;
+	  -moz-transition: all 500ms ease-in-out;
+	  -o-transition: all 500ms ease-in-out;
+	}
+	.box-hover:hover, .box-hover:focus {
+	  transform: translate(0, -15px);
+	  -webkit-transform: translate(0, -15px);
+	  -ms-transform: translate(0, -15px);
+	}
+	.light-box:hover, .light-box:focus {
+	  -webkit-box-shadow: 0 3px 0 0 #CC99FF;
+	  -moz-box-shadow: 0 3px 0 0 #CC99FF;
+	  box-shadow: 0 3px 0 0 #CC99FF;
+	}
+	/* End transitions */
