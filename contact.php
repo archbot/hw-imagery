@@ -1,4 +1,4 @@
-<section class="subscribe text-center section-padding contact-wrap" id="contact"> 
+<section class="subscribe text-center section-padding contact-wrap contents" id="contact"> 
   <div class="col-md-12">
     <h1 class="arrow2">Drop us a line</h1>
   </div>

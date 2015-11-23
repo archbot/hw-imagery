@@ -25,9 +25,9 @@
 <li class=logo>Hannah W Photography</li>
 </a>
 <li><a href="#home" onclick="loadContent('.contents','categories.html')">Portofolio</a></li>
-<li><a href="#blog" onclick="loadContent('','blog-content.html')">Blog</a></li>
-<li><a href="#contact" onclick="loadContent('','contact.php')">Contact</a></li>
-<li><a href="#about" onclick="loadContent('','about.html')">About</a></li>
+<li><a href="#blog" onclick="loadContent('.contents','blog.html')">Blog</a></li>
+<li><a href="#contact" onclick="loadContent('.contents','contact.php')">Contact</a></li>
+<li><a href="#about" onclick="loadContent('.contents','about.html')">About</a></li>
 </ul>
 </div>
 <div class="eighty valign-parent">
